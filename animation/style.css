@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.box1 {
+  display: flex;
+}
+
+.box-card {
+  height: 400px;
+  width: 295px;
+  position: relative;
+  overflow: hidden;
+}
+p {
+  color: #fff;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+img {
+  transition: all 0.5s linear;
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+}
+.box-card {
+  border-radius: 10px;
+  margin: 40px auto;
+}
+.box-card:hover .img {
+  border-radius: 10px;
+  transition: all 0.5s linear;
+  height: 800px;
+}
+
+.box-card:hover p {
+  transition: all 0.5s ease-in;
+  opacity: 1;
+}
+.img-under {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  flex-direction: column;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px 0;
+}
+.box-card:hover .fa-brands {
+  transition: all 0.5s ease-in;
+  opacity: 1;
+}
+.fa-brands {
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  color: rgb(255, 255, 255);
+}
